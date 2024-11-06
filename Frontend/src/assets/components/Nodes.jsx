@@ -45,7 +45,7 @@ function Nodes({ setAdjList }) {
             />
             <h3>Graph Input</h3>
 
-            // Render input fields for each node's connections 
+            {/* Render input fields for each node's connections */}
             {Array.from({ length: nodeCount }, (_, index) => (
                 <div key={index + 1}>
                     <label>Node {index + 1} connections: </label>
