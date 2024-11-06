@@ -8,7 +8,7 @@ function Algorithm(){
     return(
         <div className="algo">
             <label htmlFor="">Choose Algorithm</label>
-             // Dropdown to select an algorithm  
+             {/* Dropdown to select an algorithm */}
             <select value={algo} onChange={(e) => setAlgo(e.target.value)}>
                 <option value="BFS">BFS</option>
                 <option value="DFS">DFS</option>
