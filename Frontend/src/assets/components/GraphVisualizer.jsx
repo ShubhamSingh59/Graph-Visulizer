@@ -194,7 +194,7 @@ const GraphVisualizer = ({ adjList, graphType }) => {
             <button onClick={visualizeAndColorGraph} disabled={isVisualizing}>
                 {algorithm} Visualization and Coloring
             </button>
-            // SVG element for rendering the graph
+            {/* // SVG element for rendering the graph *\}
             <svg ref={svgRef} width={400} height={500} style={{ border: '1px solid black' }} />
         </div>
     );
