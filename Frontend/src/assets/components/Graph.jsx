@@ -4,7 +4,7 @@ import GraphVisualizer from './GraphVisualizer';
 function Graph({ adjList, graphType}) {
     return (
         <div>
-          //  Render GraphVisualizer and pass adjList and graphType as props
+          {/* Render GraphVisualizer and pass adjList and graphType as props */}
             <GraphVisualizer adjList={adjList} graphType={graphType}/>
         </div>
     );
