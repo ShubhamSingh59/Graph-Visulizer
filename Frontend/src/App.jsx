@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Nodes from './assets/components/Nodes';
 import GraphType from './assets/components/graphType';
 import Graph from './assets/components/Graph';
-
+import './app.css';
 function App() {
     const [adjList, setAdjList] = useState({});
     const [graphType, setGraphType] = useState("unDirected");
@@ -12,6 +12,7 @@ function App() {
         <>
             <div>
                 <h1>BFS and DFS Visualizer</h1>
+                <hr/>
                 <Nodes setAdjList={setAdjList} />
                 {/*<GraphType setGraphType={setGraphType} />*/}
                 <Graph adjList={adjList} graphType={graphType}/>

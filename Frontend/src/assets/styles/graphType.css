@@ -1,0 +1,15 @@
+.graph_type {
+    margin: 20px;
+  }
+  
+  .graph_type label {
+    font-size: 18px;
+  }
+  
+  .graph_type select {
+    padding: 8px;
+    font-size: 16px;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  

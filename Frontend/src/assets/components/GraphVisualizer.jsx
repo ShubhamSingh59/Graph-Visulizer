@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
+import '../styles/GraphVisualizer.css'
 // Define color options for nodes
 const colors = ['blue', 'orange', 'green']; 
 const GraphVisualizer = ({ adjList, graphType }) => {
@@ -185,17 +186,15 @@ const GraphVisualizer = ({ adjList, graphType }) => {
 
     return (
         <div>
-          
             <select value={algorithm} onChange={e => setAlgorithm(e.target.value)} disabled={isVisualizing}>
                 <option value="BFS">BFS</option>
                 <option value="DFS">DFS</option>
             </select>
-           
             <button onClick={visualizeAndColorGraph} disabled={isVisualizing}>
                 {algorithm} Visualization and Coloring
             </button>
             {/* // SVG element for rendering the graph */}
-            <svg ref={svgRef} width={400} height={500} style={{ border: '1px solid black' }} />
+            <svg ref={svgRef} />
         </div>
     );
 };

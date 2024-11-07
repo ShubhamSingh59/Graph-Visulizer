@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import '../styles/algorithm.css'
 function Algorithm(){
     const[algo, setAlgo] = useState("BFS")
     const handleClick = () =>{

@@ -1,0 +1,82 @@
+.adjlist {
+  max-width: 1200px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  gap: 12px;
+}
+.just-div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+label {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+h3 {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #fff;
+}
+.node_list {
+  margin: 20px;
+  padding: 15px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+pre {
+  background-color: #fff;
+  padding: 11px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #333;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
