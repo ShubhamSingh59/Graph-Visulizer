@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../styles/graphType.css'
 function GraphType({ graphType, setGraphType }) {  
     return (
         <div className="graph_type">

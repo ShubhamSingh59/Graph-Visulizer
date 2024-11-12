@@ -185,7 +185,7 @@ const GraphVisualizer = ({ adjList, graphType }) => {
     };
 
     return (
-        <div>
+        <div className='main-div'>
             <select value={algorithm} onChange={e => setAlgorithm(e.target.value)} disabled={isVisualizing}>
                 <option value="BFS">BFS</option>
                 <option value="DFS">DFS</option>

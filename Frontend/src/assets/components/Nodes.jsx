@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/nodes.css';
+import { color } from 'd3';
 function Nodes({ setAdjList }) {
 
     const [nodeCount, setNodeCount] = useState(1);
@@ -36,6 +37,23 @@ function Nodes({ setAdjList }) {
     return (
         <>
             <div className="adjlist">
+                <div className="instruction">
+                    <h4>Instruction:</h4>
+                    <ul>
+                        <li>Select the number of nodes (1 indexing)</li>
+                        <li>Start making adjacency list.</li>
+                        <li>Example:
+                            <ul>
+                                <li>Node 1 connections: 2, 3</li>
+                                <li>Node 2 connections: 1,</li>
+                                <li>Node 3 connections: 1</li>
+                            </ul>
+                        </li>
+                        <li>For multiple connections, separate them with commas.</li>
+                        <li>Click "Create Graph" once all connections are entered.</li>
+                        <li>Choose Algorithm and Click on <strong>Visulization and Coloring</strong></li>
+                    </ul>
+                </div>
                 <div className='just-div'>
                     <div className="nodes_number">
                         <label>Set Number of Node In Graph: </label>
@@ -49,13 +67,12 @@ function Nodes({ setAdjList }) {
                     </div>
                     <div className='node_list'>
                         <h4>Adjacency List</h4>
-                        Display the current connections entered by the user
                         <pre>{JSON.stringify(nodeConnections, null, 2)}</pre>
                     </div>
-                    <button onClick={createAdjList}>Create Graph</button>
+                    <button className='create_button' onClick={createAdjList}>Create Graph</button>
                 </div>
                 <div className='node_connection'>
-                    <h3>Graph Input</h3>
+                    <h3>Graph Input-</h3>
                     {/* Render input fields for each node's connections */}
                     {Array.from({ length: nodeCount }, (_, index) => (
                         <div key={index + 1}>

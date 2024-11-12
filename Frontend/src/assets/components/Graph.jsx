@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/graph.css';
 import GraphVisualizer from './GraphVisualizer'; 
 // Graph component definition
 function Graph({ adjList, graphType}) {

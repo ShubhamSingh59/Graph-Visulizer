@@ -1,73 +1,62 @@
 .adjlist {
-  max-width: 1200px;
-  margin: 10px auto;
+  max-width: 1400px;
+  width: 100%;
+  margin: 15px auto;
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: stretch; /* Ensures all divs have equal height */
   justify-content: center;
   gap: 12px;
 }
+
+.instruction {
+  width: 30%;
+  padding: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.instruction li{
+  color: rgb(245, 70, 70);
+}
 .just-div {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
-}
-label {
-  font-size: 1rem;
-  color: #333;
-  font-weight: bold;
+  gap: 5px;
+  padding: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-input[type="number"] {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
-h3 {
-  color: #333;
-  font-size: 1.2rem;
-}
-
-input[type="text"] {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%;
-  outline: none;
-  transition: border-color 0.3s ease;
-  background-color: #fff;
-}
 .node_list {
-  margin: 20px;
-  padding: 15px;
-}
-
-h4 {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 10px;
+  width: 50%;
 }
 
 pre {
   background-color: #fff;
-  padding: 11px;
+  padding: 5px;
   border-radius: 5px;
-  font-size: 0.9rem;
-  color: #333;
+  font-size: 0.8rem;
   border: 1px solid #ccc;
   white-space: pre-wrap;
   word-wrap: break-word;
   margin: 0;
 }
 
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
+label {
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.create_button {
+  margin-top: 15px;
+  padding: 10px 10px;
   font-size: 1rem;
   color: #fff;
   background-color: #4caf50;
@@ -77,6 +66,46 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.create_button:hover {
   background-color: #45a049;
+}
+
+input[type="number"] {
+  padding: 5px;
+  font-size: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+h3 {
+  color: black;
+  font-size: 1.1rem;
+}
+
+.node_connection {
+  width: 70%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.node_connection label {
+  font-size: 0.75rem;
+  color: black;
+}
+
+input[type="text"] {
+  padding: 5px;
+  margin: 5px;
+  font-size: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 75%;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #fff;
 }
