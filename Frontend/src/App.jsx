@@ -11,7 +11,7 @@ function App() {
     return (
         <>
             <div>
-                <h1>BFS and DFS Visualizer</h1>
+                <h1>Graph Visualizer</h1>
                 <hr/>
                 <Nodes setAdjList={setAdjList} />
                 {/*<GraphType setGraphType={setGraphType} />*/}
